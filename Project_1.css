@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    overflow-x: none;
+    /* background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #c4c6ca 0%, #ffffff 100%); */
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+}
+
+#navlist {
+    list-style: none;
+    font-size: 3.4vw;
+    width: 100vw;
+    height: 15vw;
+    max-height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.navcontainer {
+    background-color: #3b9292;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    width: 100vw;
+    height: 15vw;
+    max-height: 70px;
+}
+
+#anchornav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.anchtext {
+    color: white;
+    transition: all 0.1s linear 0ms;
+}
+
+.anchtext:hover {
+    transform: scale(1.09);
+}
+
+#mainheading {
+    font-size: 4.3vw;
+    font-size: clamp(20px, 5vw, 45px);
+
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.footerbox {
+    margin-top: 10px;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    text-align: center;
+
+    p {
+        color: white;
+        font-size: clamp(10px, 2vw, 16px);
+    }
+}
+
+
+#mainbox {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.btt {
+    top: 90%;
+    left: 90vw;
+    right: 7px;
+    position: fixed;
+    z-index: 2;
+    justify-self: flex-end;
+
+    img {
+        width: clamp(50px, 10vw, 60px);
+    }
+}
+
+
+.maindiv {
+    padding: clamp(90px, 15vw, 150px) 10px 0px 20px;
+    background-color: #fff;
+    height: fit-content;
+    width: 70vw;
+    max-width: 700px;
+
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 2vw;
+    justify-content: space-evenly;
+    margin-bottom: clamp(10px, 20vw, 105px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    transition: all 0.1s linear 0.1s;
+    padding: 20px 0px 20px 0px;
+}
+
+.content:hover {
+    transform: scale(1.03);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1.3;
+
+    li {
+        font-size: clamp(16px, 2vw, 18px);
+
+        a {
+            text-decoration: dashed;
+        }
+    }
+
+}
+
+.sirname {
+    font-size: clamp(25px, 5vw, 40px);
+    font-weight: bold;
+    align-self: center;
+}
+
+.sideheading {
+    font-size: clamp(20px, 2.5vw, 45px);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.photo {
+    justify-self: center;
+    position: relative;
+    transition: all 0.3s linear 0s;
+    margin: 2vh;
+}
+
+.photo img {
+    width: 50vw;
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+
+    .overlay {
+        opacity: 1;
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(36, 34, 34, 0.713);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.overlay a {
+    color: whitesmoke;
+    font-size: clamp(20px, 2vw, 50px);
+}
