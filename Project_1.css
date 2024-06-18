@@ -49,16 +49,15 @@ header {
 .anchtext {
     color: white;
     transition: all 0.1s linear 0ms;
+    font-size: clamp(15px, 4vw, 30px);
 }
 
 .anchtext:hover {
-    transform: scale(1.09);
+    transform: scale(1.1);
 }
 
 #mainheading {
-    font-size: 4.3vw;
     font-size: clamp(20px, 5vw, 45px);
-
     color: white;
 }
 
@@ -115,15 +114,17 @@ a {
     flex-wrap: wrap-reverse;
     gap: 2vw;
     justify-content: space-evenly;
+    margin-right: 10px;
     margin-bottom: clamp(10px, 20vw, 105px);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px black;
+    /* box-shadow: 0px 0px 10px 0px black; */
     transition: all 0.1s linear 0.1s;
     padding: 20px 0px 20px 0px;
 }
 
 .content:hover {
     transform: scale(1.03);
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .list {
@@ -148,7 +149,7 @@ a {
 }
 
 .sideheading {
-    font-size: clamp(20px, 2.5vw, 45px);
+    font-size: clamp(20px, 3.7vw, 28px);
     font-weight: bold;
     margin-top: 10px;
 }
