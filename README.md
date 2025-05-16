@@ -1,1 +1,1 @@
-# Very Basic Project made using HTML and CSS
+# Very Basic Web Page made using HTML and CSS
